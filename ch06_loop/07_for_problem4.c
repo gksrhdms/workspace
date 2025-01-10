@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-// Â¦¼öÇÕ, È¦¼öÇÕ °è»êÇÏ±â
+// ?????, ????? ??????
 
 int main() {
-    int evenSum = 0;  // Â¦¼öÇÕ
-    int oddSum = 0;   // È¦¼öÇÕ
+    int evenSum = 0;  // ?????
+    int oddSum = 0;   // ?????
 
     for(int i=1; i<=100; i++) {
-        // È¦Â¦ ÆÇº° Á¶°Ç½Ä
+        // ?? ??? ?????
         if (i % 2 == 0) {
             evenSum += i;
         }
@@ -16,6 +16,6 @@ int main() {
         }
     }
 
-    printf("Â¦¼öÇÕÀº %d", evenSum);
-    printf("È¦¼öÇÕÀº %d", oddSum);
+    printf("??????? %d", evenSum);
+    printf("??????? %d", oddSum);
 }
