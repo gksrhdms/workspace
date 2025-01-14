@@ -5,9 +5,6 @@
  *   - 반환값이 없는 경우는 데이터반환타입 void 정의
  *   - return or 반환값 모두 생략 가능
  * 
- * 
- * 
- * 
  */
 
 #include <stdio.h>
