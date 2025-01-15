@@ -17,6 +17,6 @@ int main() {
 
         i += 1;
     }
-
-    printf("짝수합: %d, 홀수합: %d", evenSum, oddSum);
+    printf("짝수합: %d\n", evenSum);
+    printf("홀수합: %d", oddSum);
 }
