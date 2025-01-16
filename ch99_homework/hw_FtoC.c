@@ -1,7 +1,4 @@
-#include <stdio.h>
-double FtoC(double fVal, double cVal);
 /*  - 프로그램: 화씨온도를 섭씨 온도로 변환하는 프로그램
-
   - 조건:
 
     1. 사용자에게 임의의 화씨 온도 값을 입력 받는다. (변수명은 fVal 사용할 것) ex) 17.0
@@ -14,8 +11,11 @@ double FtoC(double fVal, double cVal);
   - 화씨온도를 섭씨온도로 변환하는 수식: (5.0 x (화씨온도-32.0)) / 9.0
   - 제출은 vscode에서 개발한 코드를 복사해서 붙여넣어주세요.(파일로 제출하지 마세요!)*/
 
- double FtoC(double fVal, double cVal) {
-        scanf("%lf", &fVal);
+#include <stdio.h>
+double FtoC(double fVal);
+
+ double FtoC(double fVal) {
+        double cVal;
         cVal = (5.0 * (fVal-32.0)) / 9.0;
         return cVal;
     }
@@ -24,7 +24,7 @@ int main() {
     double fVal, cVal;
     scanf("%lf", &fVal);
 
-    double FtoC(double fVal, double cVal);
+    cVal = FtoC(fVal);
     printf("화씨온도: %.1lf, 섭씨온도: %.1lf\n", fVal, cVal);
 
 }
