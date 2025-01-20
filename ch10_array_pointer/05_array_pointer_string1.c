@@ -15,8 +15,19 @@
  *  ※ 운영체제는 문자열 상수를 읽기 전용 메모리영역에 저장
  *     따라서, 그 값을 바꾸는 명령 실행을 제한함
  *     ex) *"apple" 't'; 코드상으로 문제 없지만 실행하면 "강제종료" 될 수 있음
+ *  ※ 자료형에 따른 scanf() 시용법
+ *     ex) int num = 4;
+ *         char name[4] = "hge";
+ *         int ary[3] = {10, 20,30};
+ *         scanf("%d", &num);
+ *         scanf("%s", name);  // 문자열은 주소연산자를 사용X (그 자체로 주소이기 때문에)
+ *         // 배열명 -> 첫번째 요소의 시작주소
+ *         //  - ary(주소) + 1 -> "주소" 연산
+ *         //  - ary[2] -> 세번째 요소의 "값" -> 주소연산자 붙여야 함
+ *         scanf("%d", &ary[2]);
+ *         scanf("%d", ary+2);
  * 
- *  ※ 객체지향언언의 Mutable Types와 Immutable Types
+ *  ※ 객체지향언어의 Mutable Types와 Immutable Types
  *    1. Mutable Types: 생성 후 수정 가능한 자료형
  *     - LIST, DICT, ...
  *    2. Immutable Types: 생성 후 수정 불가능한 자료형
